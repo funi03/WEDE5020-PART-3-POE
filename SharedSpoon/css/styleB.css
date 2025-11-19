@@ -1,0 +1,233 @@
+/* ================== Reset & basic styles ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f6f2ed;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.donate-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.donate-btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/*  Main Content  */
+main {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ff6b6b;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.about-content p {
+  width: 45%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Mission / Vision / Target */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.card p, .card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style: disc inside;
+  margin-top: 10px;
+}
+
+/* Card background highlights */
+.card.mission { background: linear-gradient(135deg, #ffefba, #ffffff); }
+.card.vision { background: linear-gradient(135deg, #ffe4e1, #ffffff); }
+.card.target { background: linear-gradient(135deg, #d4f1f4, #ffffff); }
+
+/*  Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #ffcc66;
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 50px;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+}
+
+footer #current-time {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+/*  Lightbox Modal  */
+#lightbox-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+#close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Responsive */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav-links { display: none; flex-direction: column; background: #ff6b6b; position: absolute; top: 75px; right: 20px; padding: 15px; border-radius: 10px; }
+  .nav-links.active { display: flex; }
+
+  .about-content img, .about-content p { width: 100%; }
+  .about-content { flex-direction: column; }
+
+  .mission-vision { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo img { width: 100px; }
+  .about h1 { font-size: 2rem; }
+  .about-content p { font-size: 1rem; }
+  .card { width: 100%; }
+}

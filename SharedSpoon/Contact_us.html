@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get in touch with Shared Spoon. Contact details, address, social media, and map location.">
+<meta name = "Author " content = "Funanani Nelitshindwe">
+<meta name = "Keywords" content ="HTML ,CSS & Java Script ">
+
+<title>Contact - Shared Spoon</title>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css/styleF.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+<nav class="navbar">
+  <div class="logo-small">
+    <img src="IMAGES/logo.webp" alt="Shared Spoon Logo">
+  </div>
+
+  <!-- Hamburger menu for mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+
+  <ul class="nav-links">
+    <li><a href="H.html">Home</a></li>
+    <li><a href="About_us.html">About Us</a></li>
+    <li><a href="Services.html">Services</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="News_update.html">News</a></li>
+    <li><a href="Contact_us.html" class="active">Contact</a></li>
+    <li><a href="Donate.html" class="donate-btn">Donate</a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- Main Contact Section -->
+<main class="contact-section">
+  <h1>Contact Details</h1>
+
+  <!-- Contact Boxes -->
+  <div class="contact-box">
+    <h2>Email & Website</h2>
+    <p><i class="fa-solid fa-envelope"></i> Email: <b>info@sharedspoon.org.za</b></p>
+    <p><i class="fa-solid fa-globe"></i> Website: <b>www.sharedspoon.org.za</b></p>
+  </div>
+
+  <div class="contact-box">
+    <h2>Physical Address</h2>
+    <p><i class="fa-solid fa-location-dot"></i> Shared Spoon Community Centre</p>
+    <p>Chiawelo, Soweto</p>
+    <p>Gauteng, 1819</p>
+    <p><i class="fa-solid fa-phone"></i> Call: <b>072 432 5678</b></p>
+  </div>
+
+  <div class="contact-box">
+    <h2>Follow Us</h2>
+    <p><i class="fab fa-facebook"></i> Facebook: <b>@SharedSpoonFeedingScheme</b></p>
+    <p><i class="fab fa-instagram"></i> Instagram: <b>@SharedSpoon_NGO</b></p>
+    <p><i class="fab fa-x-twitter"></i> X (Twitter): <b>@SSFeedingZA</b></p>
+  </div>
+
+  <div class="contact-box">
+    <h2>Operating Hours</h2>
+    <p><i class="fa-solid fa-clock"></i> 7:00 AM to 7:00 PM Daily</p>
+  </div>
+
+  <!-- Map -->
+  <div class="map-container">
+    <h2>Our Location</h2>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.3270020640953!2d27.851492074694615!3d-26.2834972672067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a66017a99a79%3A0x877ec03cc6372f6c!2sChiawelo%20Community%20Hall!5e0!3m2!1sen!2sie!4v1755539717323!5m2!1sen!2sie"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+ 
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal">
+  <i class="fa-solid fa-xmark" id="close-lightbox"></i>
+  <img id="lightbox-modal-img" src="" alt="">
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; ST10480209 Shared Spoon-feeding Scheme</p>
+  <p id="current-time"></p>
+</footer>
+
+<!-- JS -->
+<script src="JavaScript/script5.js"></script>
+</body>
+</html>

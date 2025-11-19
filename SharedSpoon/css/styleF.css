@@ -1,0 +1,205 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f2ed;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #ff6b6b;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-small img {
+  width: 90px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.donate-btn {
+  background: #ffcc66;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.donate-btn:hover {
+  background: #ffd77f;
+  transform: scale(1.05);
+}
+
+/* Hamburger toggle */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Main Contact Section */
+.contact-section {
+  margin-top: 120px;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin-bottom: 40px;
+}
+
+/* Contact Boxes */
+.contact-box {
+  background: #fff4d9;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.contact-box h2 {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.contact-box p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.map-container h2 {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 80%;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #ffcc66;
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 50px;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .map-container iframe {
+    width: 95%;
+  }
+  .contact-box {
+    padding: 20px;
+  }
+}
+
+/* Tablet (<= 768px) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #ff6b6b;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  /* Checkbox toggle */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+ /* Show menu when toggled */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .logo-small img { width: 70px; }
+  .contact-section h1 { font-size: 2rem; }
+  .map-container iframe { height: 300px; }
+}
+
+
+/* Make map clickable for lightbox */
+#map, .lightbox-img {
+  cursor: pointer;
+}
+

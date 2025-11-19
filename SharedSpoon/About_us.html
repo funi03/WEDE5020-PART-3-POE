@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get to know us , about us .">
+<meta name = "Author " content = "Funanani Nelitshindwe">
+<meta name = "Keywords" content ="HTML ,CSS & Java Script ">
+
+  
+  <title>Shared Spoon Feeding Scheme - About Us</title>
+  <link rel="stylesheet" href="css/styleB.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="IMAGES/logo.webp" alt="Shared Spoon Logo">
+    </div>
+
+    <!-- Hidden checkbox for mobile menu toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+
+    <ul class="nav-links">
+      <li><a href="H.html">Home</a></li>
+      <li><a href="About_us.html" class="active">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="News_update.html">News</a></li>
+      <li><a href="Contact_us.html">Contact Us</a></li>
+      <li><a href="Donate.html" class="donate-btn">Donate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- About Section -->
+  <section class="about">
+    <h1>About Us</h1>
+    <div class="about-content">
+      <img src="IMAGES/img5.jpg" alt="Community Helping" id="about-img">
+      <p>
+        The <strong>Shared Spoon-feeding Scheme</strong> was founded in 2020 in Soweto with the goal of combating hunger and malnutrition in vulnerable persons and families. 
+        What began with volunteers serving hot meals twice a week to a small group of homeless people has evolved into a well-organized initiative that now serves hundreds of meals weekly, while collaborating with local farmers, bakers, and schools to ensure that no one goes hungry in the community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission, Vision & Target Audience -->
+  <section class="mission-vision">
+    <div class="card mission">
+      <h2>Mission</h2>
+      <p>Our mission is to prevent hunger and malnutrition by providing nutritious meals to individuals and families in need. Food is a basic human right, not a luxury, and no one should go to bed hungry. Community ties, volunteerism, and sustainable food sources are key pillars.</p>
+    </div>
+    <div class="card vision">
+      <h2>Vision</h2>
+      <p>To build a hunger-free community where everyone has access to nutritious food and the opportunity to thrive, underpinned by a culture of compassion and sharing.</p>
+    </div>
+    <div class="card target">
+      <h2>Target Audience</h2>
+      <ul>
+        <li>Low-income households</li>
+        <li>Homeless individuals</li>
+        <li>Children at risk</li>
+        <li>Schools</li>
+        <li>Elderly residents</li>
+        <li>Unemployed and underemployed community members</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal">
+  <img id="lightbox-img" src="" alt="Expanded Image">
+  <i class="fa-solid fa-xmark" id="close-lightbox"></i>
+</div>
+
+<footer>
+  <p>&copy; ST10480209 Shared Spoon Feeding Scheme</p>
+  <p id="current-time"></p>
+</footer>
+
+<script src="JavaScript/script1.js"></script>
+</body>
+</html>
